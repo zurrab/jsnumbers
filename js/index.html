@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+
+    <ul id="myList">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        
+    </ul>
+
+    <script>
+       
+        var myList = document.getElementById('myList');
+
+        var listItems = myList.getElementsByTagName('li');
+
+        for (let i = 0; i < listItems.length; i++) {
+            listItems[i].textContent = i + 1;
+        }
+    </script>
+
+</body>
+</html>
